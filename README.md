@@ -12,8 +12,8 @@ A collection of 8 React mini-apps built to practice core React hooks — `useSta
 | 04 | [Image Slider](./04-image-slider) | Image carousel with navigation and progress dots | `useState`, `useEffect` | — |
 | 05 | [Tabs Component](./05-tabs) | Tabbed content switcher | `useState` | — |
 | 06 | [Modal Popup](./06-modal-popup) | Modal that closes on outside click, tracked via ref | `useState`, `useRef` | — |
-| 07 | [Weather App](./07-weather-app) | Live weather lookup by city (OpenWeatherMap API) with dynamic, condition-based UI — sun, clouds, rain, etc. | `useState`, `useEffect`, `useRef` | — |
-| 08 | [Food Recipe App](./08-food-recipe-app) | Recipe search and category filter (TheMealDB API), with a full recipe detail view — ingredients, instructions, video link | `useState`, `useEffect`, `useRef` | — |
+| 07 | [Weather App](./07-weather-app) | Live weather lookup by city (OpenWeatherMap API) with dynamic, condition-based UI | `useState`, `useEffect`, `useRef` | [Live](https://your-weather-url.vercel.app) |
+| 08 | [Food Recipe App](./08-food-recipe-app) | Recipe search and category filter (TheMealDB API), with a full recipe detail view | `useState`, `useEffect`, `useRef` | [Live](https://your-recipe-url.vercel.app) |
 
 *(Live demo links will be added here after deployment.)*
 
