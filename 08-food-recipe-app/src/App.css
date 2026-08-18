@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff8f0;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-align: center;
+}
+
+.app h1 {
+  font-size: 2.6rem;
+  margin: 0 0 4px;
+  color: #d9480f;
+}
+
+.subtitle {
+  margin: 0 0 28px;
+  color: #7a6a5f;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+}
+
+.search-form input {
+  padding: 12px 16px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #e8d9cf;
+  outline: none;
+  min-width: 260px;
+}
+
+.search-form input:focus {
+  border-color: #d9480f;
+}
+
+.search-form button,
+.controls select {
+  padding: 12px 18px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #e8d9cf;
+  cursor: pointer;
+  background: #d9480f;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.controls select {
+  background: #fff;
+  color: #4a3f38;
+  border: 1px solid #e8d9cf;
+  font-weight: 500;
+}
+
+.status {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #7a6a5f;
+}
+
+.status.error {
+  color: #c0392b;
+  font-weight: 500;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.meal-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  text-align: left;
+  transition: transform 0.15s ease;
+  cursor: pointer;
+}
+
+.meal-card:hover {
+  transform: translateY(-4px);
+}
+
+.meal-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.meal-info {
+  padding: 14px;
+}
+
+.meal-info h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: #3a3128;
+}
+
+.tag {
+  display: inline-block;
+  background: #fdece0;
+  color: #d9480f;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-right: 6px;
+}
+
+.tag-alt {
+  background: #eef3fd;
+  color: #2f5fd9;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 18px;
+  max-width: 560px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 24px;
+  text-align: left;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #f1e5db;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #4a3f38;
+}
+
+.modal-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.modal h2 {
+  margin: 0 0 10px;
+  color: #3a3128;
+}
+
+.modal-tags {
+  margin-bottom: 18px;
+}
+
+.modal h4 {
+  margin: 18px 0 8px;
+  color: #d9480f;
+}
+
+.ingredient-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #4a3f38;
+}
+
+.ingredient-list li {
+  margin-bottom: 4px;
+}
+
+.instructions {
+  color: #4a3f38;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.video-link {
+  display: inline-block;
+  margin-top: 16px;
+  background: #d9480f;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
